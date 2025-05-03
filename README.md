@@ -18,7 +18,11 @@ In the browser, you can click on the button and see the data get loaded.
 
 Local setup should be complete with this.
 
-## Next steps - yet to try these!
+
+
+
+## yet to try the following
+## Next steps - 
 
 The main important bit is that the React project has `proxy` set to `localhost:3001` in the `package.json` file. Take a look!
 
