@@ -25,6 +25,10 @@ Here are some projects that have been built using this boilerplate.
 
 First, fork this boilerplate so you get your own copy of it. Once you have done that, you can clone your new repo to your machine, and get started.
 
+Install RVM from https://rvm.io/
+Install Ruby via RVM. The version is in the Gemfile.
+Install Postgres from https://postgresapp.com/ and initialize the PG server.
+
 You need **TWO** terminals for this.
 
 In one terminal, run `bundle` to install the dependencies. Run `bin/rake db:setup` to create the databases (called rails_project_development by default). Run `bin/rails s` to run the server.
