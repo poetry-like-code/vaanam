@@ -1,7 +1,5 @@
 # React + Rails Skype Rip-Off - Currently has only boilerplate code
 
-The main important bit is that the React project has `proxy` set to `localhost:3001` in the `package.json` file. Take a look!
-
 # Local Setup
 
 First, fork this boilerplate so you get your own copy of it. Once you have done that, you can clone your new repo to your machine, and get started.
@@ -21,6 +19,8 @@ In the browser, you can click on the button and see the data get loaded.
 Local setup should be complete with this.
 
 ## Next steps - yet to try these!
+
+The main important bit is that the React project has `proxy` set to `localhost:3001` in the `package.json` file. Take a look!
 
 From here, you can start working on your project!
 
