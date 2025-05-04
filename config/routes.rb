@@ -10,6 +10,11 @@ Rails.application.routes.draw do
   get '/auth/:provider/callback', to: 'user_sessions#login'
   get '/auth/failure', to: redirect('/')
 
+  # Static pages
+  get '/about', to: 'static_pages#about'
+  get '/privacy', to: 'static_pages#privacy'
+  get '/terms', to: 'static_pages#terms'
+
   namespace :api do # /api/data
     get '/data', to: 'tests#index'
     resources :dogs

@@ -1,0 +1,18 @@
+<header class="bg-white shadow">
+  <nav class="container mx-auto px-4 py-4">
+    <div class="flex justify-between items-center">
+      <div class="flex items-center">
+        <%= link_to "Vaanam", root_path, class: "text-xl font-bold text-gray-800" %>
+      </div>
+      
+      <div class="flex items-center space-x-4">
+        <% if current_user.nil? %>
+          <%= link_to "Sign in with Google", "/auth/google_oauth2", class: "px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" %>
+        <% else %>
+          <span class="text-gray-600"><%= current_user.name %></span>
+          <%= link_to "Sign out", '/logout', method: :delete, class: "px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700" %>
+        <% end %>
+      </div>
+    </div>
+  </nav>
+</header> 

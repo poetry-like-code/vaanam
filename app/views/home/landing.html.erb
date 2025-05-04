@@ -1,9 +1,14 @@
-<% if current_user.nil? %>  
-<%= link_to "Sign in with Google", "/auth/google_oauth2" %> 
-<% else %>
-   <%= current_user.email %>
-   <br/>
-   <%= current_user.name %>
-   <br/>
-   <%= link_to "Sign out", '/logout', method: :delete %>
-<% end %>
+<div class="max-w-4xl mx-auto text-center">
+  <h1 class="text-4xl font-bold text-gray-900 mb-8">Welcome to Vaanam</h1>
+  
+  <% if current_user %>
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">Your Profile</h2>
+      <p class="text-gray-600 mb-2">Email: <%= current_user.email %></p>
+      <p class="text-gray-600">Name: <%= current_user.name %></p>
+      <p class="text-gray-600"><%= link_to "Sign out", '/logout', method: :delete %></p>
+    </div>
+  <% else %>
+    <p class="text-xl text-gray-600 mb-8"><%= link_to "Sign in with Google", "/auth/google_oauth2" %> </p>
+  <% end %>
+</div>
